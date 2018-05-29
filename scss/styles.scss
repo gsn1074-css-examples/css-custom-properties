@@ -1,0 +1,27 @@
+@import "customForm";
+@import url('https://fonts.googleapis.com/css?family=Lora|PT+Sans');
+
+body {
+	font-size: 1.5rem;
+	min-height: 100vh;
+	text-align: center;
+	font-family: 'PT Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+form {
+	margin: 5rem;
+}
+
+.formsContainer {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+}
+
+@include customForm();
+@include customForm(".medium", 1.5em, 1rem, #592);
+@include customForm(".large", 1.75em, 1rem, #933);
